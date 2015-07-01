@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Search *search =[[Search alloc] initWithSize:CGSizeMake(200, 200)];
+    search.fillColor =[UIColor redColor];
+    
+    UIImage *image =search.image;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

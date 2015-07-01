@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D2C67B47-7366-45A3-848B-688676E69D09</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>IconKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>63781EF3A281261ED5F1B46262779B52DACB814A</key>
 		<string>https://github.com/crazymobiledevs/IconKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IconKit/IconKit.xcodeproj/project.xcworkspace</string>
+	<string>IconKit.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>63781EF3A281261ED5F1B46262779B52DACB814A</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/crazymobiledevs/IconKit.git</string>

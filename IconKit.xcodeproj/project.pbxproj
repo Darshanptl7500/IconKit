@@ -14,6 +14,7 @@
 		7BCE2BE91B43EC8B00C4109C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE2BE81B43EC8B00C4109C /* Images.xcassets */; };
 		7BCE2BEC1B43EC8B00C4109C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE2BEA1B43EC8B00C4109C /* LaunchScreen.xib */; };
 		7BCE2BF81B43EC8B00C4109C /* IconKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2BF71B43EC8B00C4109C /* IconKitTests.m */; };
+		7BCE2C031B43F08000C4109C /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2C021B43F08000C4109C /* Search.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7BCE2BF11B43EC8B00C4109C /* IconKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IconKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCE2BF61B43EC8B00C4109C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BCE2BF71B43EC8B00C4109C /* IconKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconKitTests.m; sourceTree = "<group>"; };
+		7BCE2C011B43F08000C4109C /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		7BCE2C021B43F08000C4109C /* Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Search.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				7BCE2BE21B43EC8B00C4109C /* ViewController.h */,
 				7BCE2BE31B43EC8B00C4109C /* ViewController.m */,
 				7BCE2BE51B43EC8B00C4109C /* Main.storyboard */,
+				7BCE2C011B43F08000C4109C /* Search.h */,
+				7BCE2C021B43F08000C4109C /* Search.m */,
 				7BCE2BE81B43EC8B00C4109C /* Images.xcassets */,
 				7BCE2BEA1B43EC8B00C4109C /* LaunchScreen.xib */,
 				7BCE2BDB1B43EC8B00C4109C /* Supporting Files */,
@@ -219,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BCE2BE41B43EC8B00C4109C /* ViewController.m in Sources */,
+				7BCE2C031B43F08000C4109C /* Search.m in Sources */,
 				7BCE2BE11B43EC8B00C4109C /* AppDelegate.m in Sources */,
 				7BCE2BDE1B43EC8B00C4109C /* main.m in Sources */,
 			);
@@ -415,6 +421,7 @@
 				7BCE2BFD1B43EC8B00C4109C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BCE2BFE1B43EC8B00C4109C /* Build configuration list for PBXNativeTarget "IconKitTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +430,7 @@
 				7BCE2C001B43EC8B00C4109C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
