@@ -8,34 +8,53 @@
 
 #import "Search.h"
 
-#define CGPointMake(x,y) CGPointMake((x*self.size.width)/60, (y*self.size.height)/60)
+#define CGPointMake(x,y) CGPointMake((x*tmp_size.width)/60, (y*tmp_size.height)/60)
 @interface Search()
 {
     UIColor *tmp_fillColor;
     UIColor *tmp_strokeColor;
-    
+    CGFloat tmp_strokeWidth;
+    CGSize  tmp_size;
+    BOOL tmp_onlyStroke;
 }
 @end
 
 @implementation Search
 -(instancetype)initWithSize:(CGSize)size
 {
-     if((self = [super init])) {
-         self.size = size;
-     }
+    if((self = [super init])) {
+        tmp_size = size;
+        tmp_strokeColor = [UIColor blackColor];
+        tmp_fillColor = [UIColor blackColor];
+        tmp_onlyStroke = YES;
+        tmp_strokeWidth = 1.0;
+        
+    }
     return self;
 }
+#pragma mark - Size Getter Setter
+-(void)setSize:(CGSize)size
+{
+    tmp_size = size;
+    UIImage *imageGenerated = [self generateImage];
+    self.image = imageGenerated;
+}
+-(CGSize)size
+{
+    return tmp_size;
+}
+#pragma mark - FillColor Getter Setter
 -(void)setFillColor:(UIColor *)fillColor
 {
     tmp_fillColor=fillColor;
     UIImage *imageGenerated = [self generateImage];
     self.image = imageGenerated;
-    
 }
 -(UIColor *)fillColor
 {
     return tmp_fillColor;
 }
+#pragma mark - StrokeColor Getter Setter
 -(void)setStrokeColor:(UIColor *)strokeColor
 {
     tmp_strokeColor = strokeColor;
@@ -46,11 +65,34 @@
 {
     return tmp_strokeColor;
 }
+#pragma mark - StrokeWidth Getter Setter
+-(void)setStrokeWidth:(CGFloat)strokeWidth
+{
+    tmp_strokeWidth = strokeWidth;
+    UIImage *imageGenerated = [self generateImage];
+    self.image = imageGenerated;
+}
+-(CGFloat)strokeWidth
+{
+    return tmp_strokeWidth;
+}
+#pragma mark - OnlyStroke Getter Setter
+-(void)setOnlyStroke:(BOOL)onlyStroke
+{
+    tmp_onlyStroke = onlyStroke;
+    UIImage *imageGenerated = [self generateImage];
+    self.image = imageGenerated;
+}
+-(BOOL)onlyStroke
+{
+    return tmp_onlyStroke;
+}
+#pragma mark - Image Generation
 -(UIImage *)generateImage
 {
-    UIGraphicsBeginImageContextWithOptions(self.size, NO, [[UIScreen mainScreen] scale]);
-    if (self.onlyStroke) {
-   
+    UIGraphicsBeginImageContextWithOptions(tmp_size, NO, [[UIScreen mainScreen] scale]);
+    if (tmp_onlyStroke) {
+        
         //// Bezier 2 Drawing
         UIBezierPath* bezier2Path = UIBezierPath.bezierPath;
         [bezier2Path moveToPoint: CGPointMake(60, 58.3)];
@@ -63,8 +105,8 @@
         [bezier2Path addCurveToPoint: CGPointMake(41, 39.3) controlPoint1: CGPointMake(47, 29.6) controlPoint2: CGPointMake(44.7, 35.1)];
         [bezier2Path addLineToPoint: CGPointMake(60, 58.3)];
         [bezier2Path closePath];
-  
-       
+        
+        
         [tmp_strokeColor setStroke];
         bezier2Path.lineWidth = 1;
         [bezier2Path stroke];
