@@ -28,3 +28,31 @@ IconKit is a dynamic icon generation library.You can create dynamic icon by code
  
  ![blue stroke](https://dl.dropboxusercontent.com/s/51h2y4zxucctxty/blue_stoke.png)![green stroke]( https://dl.dropboxusercontent.com/s/1gjvr68720ghzr5/green_stoke.png)
  
+###Next Icon 
+###StrokeIcon With Round
+
+ `Next *next =[[Next alloc] initWithSize:CGSizeMake(200, 200)];`
+ 
+ `next.strokeColor = [UIColor blackColor];`
+ 
+ `next.strokeWidth = 2.0;`
+ 
+ `next.hasRound = YES;`   
+ 
+ `next.onlyStroke = YES;`
+ 
+ `UIImage *nextImage = next.image;`
+ 
+###FillIcon With Round
+
+ `Next *next =[[Next alloc] initWithSize:CGSizeMake(200, 200)];`
+ 
+ `next.fillColor = [UIColor grayColor];`
+ 
+ `next.strokeColor =[UIColor blackColor];`
+ 
+ `next.strokeWidth = 2.0;`
+ 
+ `next.hasRound = YES;`
+ 
+ `next.onlyStroke = NO;`
