@@ -43,6 +43,9 @@ IconKit is a dynamic icon generation library.You can create dynamic icon by code
  
  `UIImage *nextImage = next.image;`
  
+ ![blue stroke](https://dl.dropboxusercontent.com/s/854vehix8mvm4xb/next_black_Stroke.png)![green stroke]( https://dl.dropboxusercontent.com/s/vmwvq3hzl0ojtpv/Next_blue_stroke.png)
+ 
+ 
 ###FillIcon With Round
 
  `Next *next =[[Next alloc] initWithSize:CGSizeMake(200, 200)];`
@@ -56,3 +59,6 @@ IconKit is a dynamic icon generation library.You can create dynamic icon by code
  `next.hasRound = YES;`
  
  `next.onlyStroke = NO;`
+ 
+ ![blue stroke](https://dl.dropboxusercontent.com/s/pp1ypwh27nu98yn/next_fill_Black.png)![green stroke]( https://dl.dropboxusercontent.com/s/0niw3w81n2antaa/next_fill_gb.png)
+ 
