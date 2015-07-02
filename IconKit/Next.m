@@ -50,7 +50,7 @@
 -(void)setStrokeColor:(UIColor *)strokeColor
 {
     tmp_strokeColor = strokeColor;
-    NSAssert([tmp_fillColor isEqual:tmp_strokeColor], @"Stroke and Fill Color Must be different");
+    NSAssert(!CGColorEqualToColor(tmp_strokeColor.CGColor,tmp_fillColor.CGColor), @"Stroke and Fill Color Must be different");
     UIImage *imageGenerated = [self generateImage];
     self.image = imageGenerated;
 }
@@ -85,7 +85,8 @@
 {
     tmp_fillColor = fillColor;
     
-    NSAssert([tmp_fillColor isEqual:tmp_strokeColor], @"Stroke and Fill Color Must be different");
+  NSAssert(!CGColorEqualToColor(tmp_strokeColor.CGColor,tmp_fillColor.CGColor), @"Stroke and Fill Color Must be different");
+    
     UIImage *imageGenerated = [self generateImage];
     self.image = imageGenerated;
 }
