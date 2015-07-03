@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B5B37061B45740A007E6E77 /* Next.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B37051B45740A007E6E77 /* Next.m */; };
+		7B7D1E4B1B464E6100DF9DC5 /* Previous.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7D1E4A1B464E6100DF9DC5 /* Previous.m */; };
 		7BCE2BDE1B43EC8B00C4109C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2BDD1B43EC8B00C4109C /* main.m */; };
 		7BCE2BE11B43EC8B00C4109C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2BE01B43EC8B00C4109C /* AppDelegate.m */; };
 		7BCE2BE41B43EC8B00C4109C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2BE31B43EC8B00C4109C /* ViewController.m */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		7B5B37041B45740A007E6E77 /* Next.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Next.h; sourceTree = "<group>"; };
 		7B5B37051B45740A007E6E77 /* Next.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Next.m; sourceTree = "<group>"; };
+		7B7D1E491B464E6100DF9DC5 /* Previous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Previous.h; sourceTree = "<group>"; };
+		7B7D1E4A1B464E6100DF9DC5 /* Previous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Previous.m; sourceTree = "<group>"; };
 		7BCE2BD81B43EC8B00C4109C /* IconKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BCE2BDC1B43EC8B00C4109C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BCE2BDD1B43EC8B00C4109C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				7BCE2C021B43F08000C4109C /* Search.m */,
 				7B5B37041B45740A007E6E77 /* Next.h */,
 				7B5B37051B45740A007E6E77 /* Next.m */,
+				7B7D1E491B464E6100DF9DC5 /* Previous.h */,
+				7B7D1E4A1B464E6100DF9DC5 /* Previous.m */,
 				7BCE2BE81B43EC8B00C4109C /* Images.xcassets */,
 				7BCE2BEA1B43EC8B00C4109C /* LaunchScreen.xib */,
 				7BCE2BDB1B43EC8B00C4109C /* Supporting Files */,
@@ -230,6 +235,7 @@
 			files = (
 				7B5B37061B45740A007E6E77 /* Next.m in Sources */,
 				7BCE2BE41B43EC8B00C4109C /* ViewController.m in Sources */,
+				7B7D1E4B1B464E6100DF9DC5 /* Previous.m in Sources */,
 				7BCE2C031B43F08000C4109C /* Search.m in Sources */,
 				7BCE2BE11B43EC8B00C4109C /* AppDelegate.m in Sources */,
 				7BCE2BDE1B43EC8B00C4109C /* main.m in Sources */,
