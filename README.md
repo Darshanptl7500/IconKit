@@ -77,8 +77,9 @@ IconKit is a dynamic icon generation library.You can create dynamic icon by code
  `prev.onlyStroke = YES;`
  
  `UIImage *prevImage = prev.image;`
-
  
+ [Imgur](http://i.imgur.com/pGQ5lDa.png)
+
 ###FillIcon With Round
 
  `Previous *prev =[[Previous alloc] initWithSize:CGSizeMake(200, 200)];`
@@ -95,3 +96,4 @@ IconKit is a dynamic icon generation library.You can create dynamic icon by code
  
  `UIImage *prevImage = prev.image;`
 
+[Imgur](http://i.imgur.com/WFs4ElX.png)
